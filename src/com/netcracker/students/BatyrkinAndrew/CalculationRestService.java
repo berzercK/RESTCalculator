@@ -31,7 +31,7 @@ public class CalculationRestService {
                 "In URI (/rest/calc/) you should write:" + "</h2>" +
                 "<ul> " +
                 "<li><pre>" + "ADD:      add/a/b for \"a + b\"" + "</pre></li>" +
-                "<li><pre>" + "DIVIDING: did/a/b for \"a - b\"" + "</pre></li>" +
+                "<li><pre>" + "SUBTRACT: did/a/b for \"a - b\"" + "</pre></li>" +
                 "<li><pre>" + "MULTIPLY: mul/a/b for \"a * b\"" + "</pre></li>" +
                 "<li><pre>" + "DIVISION: div/a/b for \"a / b\"" + "</pre></li>" +
                 "</ul>" +
@@ -93,7 +93,7 @@ public class CalculationRestService {
                     result = BigDecimal.valueOf(first + Integer.parseInt(b));
                     break;
                 }
-                case "did": {
+                case "sub": {
                     result = BigDecimal.valueOf(first - Integer.parseInt(b));
                     break;
                 }
